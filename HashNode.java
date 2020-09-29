@@ -2,9 +2,10 @@
 // Name: Christopher Semler
 // Email: csemler@wisc.edu
 // Team: CG
+// Role: DataWrangler2
 // TA: Yeping
-// Lecturer: Florian Heimerl
-// Notes to Grader: none
+// Lecturer: Florian
+// Notes to Grader: nope
 
 public class HashNode<KeyType, ValueType> 
 {

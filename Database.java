@@ -1,3 +1,12 @@
+// --== CS400 File Header Information ==--
+// Name: Christopher Semler
+// Email: csemler@wisc.edu
+// Team: CG
+// Role: DataWrangler2
+// TA: Yeping
+// Lecturer: Florian
+// Notes to Grader: nope
+
 import java.util.Scanner;
 import java.io.File;
 import java.io.IOException;
