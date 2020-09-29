@@ -10,7 +10,12 @@
 public class LogInAndRegister
 {
 	private HashTableMap<String, User> userTable;
-	
+
+	public LogInAndRegister()
+	{
+		userTable = new HashTableMap<>();
+	}
+
 	//method to securely encrypt password
 	//take each character and multiply by two
 	public String encryption(String password)

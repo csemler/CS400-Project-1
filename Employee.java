@@ -57,22 +57,22 @@ public class Employee
 		return name;
 	}
 
-	public LocalDate getBirth()
+	public LocalDate getDateOfBirth()
 	{
 		return dateOfBirth;
 	}
 
-	public LocalDate getRecord()
+	public LocalDate getRecordDate()
 	{
 		return recordDate;
 	}
 
-	public LocalDate getHire()
+	public LocalDate getHireDate()
 	{
 		return hireDate;
 	}
 
-	public String getTitle()
+	public String getJobTitle()
 	{
 		return jobTitle;
 	}
@@ -87,7 +87,7 @@ public class Employee
 		return status;
 	}
 
-	public String getUnit()
+	public String getBusinessUnit()
 	{
 		return businessUnit;
 	}
@@ -102,22 +102,22 @@ public class Employee
 		this.name = name;
 	}
 
-	public void setBirth(LocalDate date)
+	public void setDateOfBirth(LocalDate date)
 	{
 		dateOfBirth = date;
 	}
 
-	public void setRecord(LocalDate date)
+	public void setRecordDate(LocalDate date)
 	{
 		recordDate = date;
 	}
 
-	public void setHire(LocalDate date)
+	public void setHireDate(LocalDate date)
 	{
 		hireDate = date;
 	}
 
-	public void setTitle(String title)
+	public void setJobTitle(String title)
 	{
 		jobTitle = title;
 	}
@@ -132,7 +132,7 @@ public class Employee
 		this.status = status;
 	}
 
-	public void setUnit(String unit)
+	public void setBusinessUnit(String unit)
 	{
 		businessUnit = unit;
 	}

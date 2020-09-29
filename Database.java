@@ -18,9 +18,37 @@ public class Database
 {
 	private HashTableMap<Integer, Employee> employeeInfo;
 	
-	public Database() throws FileNotFoundException
+	//default constructor (will set size of table to 10)
+	public Database()
 	{
-		File file = new File("Users/chris/Downloads/employee_info.txt");
+		employeeInfo = new HashTableMap<>();
+		try {
+			readFile();
+		}
+		catch (FileNotFoundException e)
+		{
+			System.out.println("File not found!");
+		}
+	}
+
+	//constructor to set table size to specific capacity
+	public Database(int capacity)
+	{
+		employeeInfo = new HashTableMap<>(capacity);
+		try {
+			readFile();
+		}
+		catch (FileNotFoundException e)
+		{
+			System.out.println("File not found!");
+		}
+	}
+
+	//helper method to read file and import employees
+	private void readFile() throws FileNotFoundException
+	{
+		File file = new File("/Users/chris/Desktop/employee_info.txt");
+	//	File file = new File("employee_info.txt");
 		Scanner scan = new Scanner(file);
 		
 		//Format: id, name, date/of/birth, date/of/record, date/of/hire, title, gender, status,  unit
