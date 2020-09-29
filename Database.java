@@ -16,7 +16,7 @@ import java.io.FileNotFoundException;
 
 public class Database 
 {
-	private HashTable<Integer, Employee> employeeInfo;
+	private HashTableMap<Integer, Employee> employeeInfo;
 	
 	public Database() throws FileNotFoundException
 	{
@@ -82,7 +82,7 @@ public class Database
 	}
 
 	//returns hash table with all the Employee info
-	public HashTable<Integer, Employee> allEmployeesInfo()
+	public HashTableMap<Integer, Employee> allEmployeesInfo()
 	{
 		return employeeInfo;
 	}

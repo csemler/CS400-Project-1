@@ -9,7 +9,7 @@
 
 public class LogInAndRegister
 {
-	private HashTable<String, User> userTable;
+	private HashTableMap<String, User> userTable;
 	
 	//method to securely encrypt password
 	//take each character and multiply by two
@@ -58,5 +58,11 @@ public class LogInAndRegister
 	public boolean isAdmin(String username)
 	{
 		return userTable.get(username).isAdmin();
+	}
+
+	//clears user database
+	public void clear()
+	{
+		userTable.clear();
 	}
 }

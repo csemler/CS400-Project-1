@@ -9,7 +9,7 @@
 
 import java.util.NoSuchElementException;
 
-public class HashTable<KeyType, ValueType> implements MapADT<KeyType, ValueType>
+public class HashTableMap<KeyType, ValueType> implements MapADT<KeyType, ValueType>
 {
   private HashNode<KeyType, ValueType>[] map;
   private int items;
@@ -17,14 +17,14 @@ public class HashTable<KeyType, ValueType> implements MapADT<KeyType, ValueType>
   
   //constructor with one parameter
   //sets array capacity to int capacity parameter
-  public HashTable(int capacity)
+  public HashTableMap(int capacity)
   {
     map = new HashNode[capacity];
     items = 0;
   }
   
   //default constructor to set capacity to ten
-  public HashTable() // with default capacity = 10
+  public HashTableMap() // with default capacity = 10
   {
     map = new HashNode[10];
     items = 0;
